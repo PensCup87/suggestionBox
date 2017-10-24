@@ -8,23 +8,13 @@ namespace suggestionBox.Controllers
 {
     public class HomeController : Controller
     {
+        //there is an action for each page, any new page needs a new action
+        //not all actions return a view
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
     }
 }
